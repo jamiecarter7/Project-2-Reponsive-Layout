@@ -72,6 +72,10 @@ h3 {
 	font-size: 0.9em;
 }
 
+.nav li a:hover{
+	color: #0399FF;
+}
+
 .name {
 	background: none;
 }
@@ -80,7 +84,7 @@ h3 {
 
  .wrap {
 	margin: 0 auto;
-	width: 82%;
+
 }
 
 .banner {
@@ -89,18 +93,58 @@ h3 {
 	padding: 40px 0;
 }
 
-.banner img {
-		padding: 20px;
+.bannerimg {
+		padding: 20px 10px;
+}
+
+.profile {
+	padding:0 0 0 8px;
+}
+
+.profile li{
+		display: inline-block;
+		margin: 10px 10px;
+	}
+
+.profilelink {
+	height:80px;
+	width: 80px;
+	transition: all 0.5s;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+
+.profilelink:hover {
+	transform: scale(1.2);
+	transition: all 0.5s;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 
 main {
-	background: #fff;
 	margin: 0 auto;
-	padding: 0 0 5px 0;
+}
+
+main section {
+	background: #fff;
+	padding: 0 5% 5px;
+	box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+	border-top: solid  4px;
 }
 
 main p {
 	margin: 0 0 60px;
+}
+
+#portfolio {
+	border-color: #F5A623;
+
+}
+
+#skills {
+	border-color: #50E3C2;
+	margin-top: 80px;
 }
 
 .contact {
@@ -115,6 +159,8 @@ main p {
 	font-weight: 500;
 	padding-left: 14px;
 }
+
+/* Footer Style  -------------------------------------- */
 
 .footer {
 	width: 90%;
@@ -203,22 +249,35 @@ li.footer-nav-tablet {
 
 	.banner p {
 		padding: 0 20px;
-		font-size: 1.15em;
+		font-size: 1.02em;
 	}
 
-	.banner img {
+	.bannerimg {
 		float: right;
 		width: 45%;
 		padding: 20px 20px 0 30px;
 	}
 
-	.portfolio-block {
+	main section {
+	padding: 0 1% 5px;
+}
+
+	.profile li{
+		margin: 0 10px;
+	}
+
+	.profilelink{
+		height:50px;
+		width: 50px;
+	}
+
+	.card {
 		float: left;
 		width: 50%;
 		padding: 20px;
 	}
 
-	.portfolio-block:nth-child(2n){
+	.card:nth-child(2n){
     clear:both;
 	}
 
@@ -252,7 +311,7 @@ li.footer-nav-tablet {
 
 /* Laptop Styles  -------------------------------------- */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
 
 
 	/* Sturcture Style  -------------------------------------- */
@@ -302,21 +361,25 @@ li.footer-nav-tablet {
 		font-size: 1.2em;
 	}
 
-	.banner img {
+	.bannerimg {
 		width: 40%;
 	}
 
-	.portfolio-block {
+	.profile {
+		clear: none;
+	}
+
+	.card {
 		float: left;
 		width: 33.3333%;
 		padding: 1.33%;
 	}
 
-	.portfolio-block:nth-child(2n){
+	.card:nth-child(2n){
     clear:none;
 	}
 
-	.portfolio-block:nth-child(4n+1){
+	.card:nth-child(4n+1){
     clear: both;
 	}
 
